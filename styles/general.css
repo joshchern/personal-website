@@ -1,0 +1,414 @@
+body {
+  margin: 0;
+  background-color: whitesmoke;
+  font-family: Uchen;
+  color: rgb(35, 28, 7);
+}
+
+p {
+  margin: 0;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.web-developer-images-container,
+.hero-image-container {
+  display: flex;
+  position: relative;
+  width: 75%;
+  height: 100%;
+}
+
+.name-title-container {
+  display: flex;
+  background-color: whitesmoke;
+  flex-direction: column;
+  align-items: left;
+  justify-content: end;
+  width: 25%;
+}
+
+.name-title-container-overlay {
+  position: absolute;
+  width: 25%;
+  height: 150vh;
+  top: -130vh;
+  background: linear-gradient(rgba(164,189,221,255), rgba(214,214,213,255), rgba(250,200,162,255), transparent, transparent, transparent, transparent, transparent, transparent);
+  animation: sunrise-and-sunset-background 8s infinite ease alternate forwards;
+}
+
+@keyframes sunrise-and-sunset-background {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(130vh);
+  }
+}
+
+.sun {
+  width: 30vh;
+  height: 30vh;
+  background: linear-gradient(transparent, rgb(242, 112, 89));
+  border-radius: 100%;
+  margin: 0 05% 80% 20%;
+  animation: sunrise-and-sunset 8s infinite ease alternate forwards;
+  z-index: 100;
+}
+
+@keyframes sunrise-and-sunset {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(16.25vh);
+  }
+}
+
+.name {
+  position: relative;
+  margin: 0 5% 0 5%;
+  width: 50%;
+  font-size: 50px;
+  text-align: left;
+  line-height: 55px;
+}
+
+.title {
+  position: relative;
+  margin: 0 5% 5% 5%;
+  font-size: 30px;
+  text-align: justify;
+  font-style: italic;
+  line-height: 35px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.arrow {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	background: transparent;
+	border-top: 8px solid rgb(35, 28, 7);
+	border-right: 8px solid rgb(35, 28, 7);
+  border-left: none;
+  border-bottom: none;
+  transform: rotate(135deg);
+  margin-left: 7.5%;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.personal-statement-container {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+}
+
+.personal-statement-images-container {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 100%;
+}
+
+.personal-statement-top-images-container {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  justify-content: center;
+}
+
+.personal-statement-bottom-images-container {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  justify-content: center;
+}
+
+.katana {
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 2.25%;
+  margin-right: 2%;
+}
+
+.house {
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 1.25%;
+  margin-left: 2%;
+}
+
+.frog {
+  height: 80%;
+  width: 100%;
+  object-fit: contain;
+  margin-top: 2.25%;
+}
+
+.cap {
+  height: 90%;
+  width: 100%;
+  object-fit: contain;
+  margin-top: 1.25%;
+}
+
+.web-developer-title-and-content,
+.personal-statement-title-and-content {
+  background-color: rgb(35, 28, 7);
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  width: 25%;
+}
+
+.web-developer-image {
+  margin-left: 4%;
+}
+
+.web-developer-title,
+.personal-statement-title {
+  position: relative;
+  margin: 0 5% 0 5%;
+  font-size: 50px;
+  text-align: left;
+}
+
+.web-developer-content,
+.personal-statement {
+  font-size: 20px;
+  position: relative;
+  margin: 0 5% 0 5%;
+  text-align: justify;
+}
+
+.web-developer-arrow-container,
+.personal-statement-arrow-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.personal-statement-arrow {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	background: transparent;
+	border-top: 8px solid whitesmoke;
+	border-right: 8px solid whitesmoke;
+  border-left: none;
+  border-bottom: none;
+  transform: rotate(135deg);
+  margin-left: 7.5%;
+}
+
+.personal-statement-arrow:hover {
+  cursor: pointer;
+}
+
+.skills-container {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 200%;
+}
+
+.skills-images-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 75%;
+  background-color: rgb(35, 28, 7);
+}
+
+.skills-icons {
+  width: 20vh;
+  height: 20vh;
+  object-fit: contain;
+}
+
+.game-developer-container,
+.web-developer-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+  border-left: 3px solid whitesmoke;
+}
+
+.web-developer-container {
+  margin-top: 15vh;
+}
+
+.game-developer-container {
+  margin-bottom: 15vh;
+}
+
+.game-developer-label,
+.web-developer-label {
+  color: whitesmoke;
+  font-size: 50px;
+  margin-left: 1vh;
+}
+
+
+.skills-title-and-content-container {
+  background-color: whitesmoke;
+  color: rgb(35, 28, 7);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  width: 25%;
+}
+
+.skills-title {
+  position: relative;
+  margin: 0 5% 0 5%;
+  font-size: 50px;
+  text-align: left;
+}
+
+.skills-content {
+  font-size: 20px;
+  position: relative;
+  margin: 0 5% 0 5%;
+  text-align: justify;
+}
+
+.web-developer-portfolio-container {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 300%;
+}
+
+.game-dev-portfolio-container {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 400%;
+}
+
+.embedded-twitter-link:link {
+  color: rgb(90, 75, 31);
+}
+
+.embedded-twitter-link:visited {
+  color: rgb(90, 75, 31); 
+}
+
+.game-dev-portfolio-images-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+  background-color: rgb(35, 28, 7);
+}
+
+.game-dev-top-images,
+.game-dev-bottom-images  {
+  display: flex;
+  height: 50%;
+  margin: 3vh 3vh 3vh 3vh;
+}
+
+.game-div-row-div {
+  display: flex;
+  align-items: start;
+}
+
+.game-dev-image {
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+  margin: 0;
+}
+
+.project-sado {
+  display: inline;
+  color: white;
+  font-size: 50px;
+  padding-left: 1vh;
+  border-left: 3px solid whitesmoke;
+  margin-left: 3vh;
+  height: 9vh;
+}
+
+.game-dev-image-caption {
+  color: whitesmoke;
+  font-size: 20px;
+  margin: 0;
+}
+
+.game-dev-title-and-content-container {
+  background-color: whitesmoke;
+  color: rgb(35, 28, 7);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  width: 25%;
+  ;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  background-color: rgb(35, 28, 7);
+  color: whitesmoke;
+  font-size: 20px;
+  width: 100%;
+  height: 3.5%;
+  top: 500.5%;
+}
+
+.email:link {
+  color: whitesmoke;
+}
+
+.email:visited {
+  color: rgb(90, 75, 31); 
+}
