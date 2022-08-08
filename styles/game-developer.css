@@ -1,0 +1,39 @@
+.game-dev-portfolio-container {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 400%;
+}
+
+.game-dev-portfolio-images-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+  background-color: rgb(35, 28, 7);
+}
+
+.game-dev-top-images,
+.game-dev-bottom-images  {
+  display: flex;
+  height: 50%;
+  margin: 3vh 3vh 3vh 3vh;
+}
+
+.game-dev-image {
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+  margin: 0;
+}
+
+.project-sado {
+  display: inline;
+  color: white;
+  font-size: 50px;
+  padding-left: 1vh;
+  border-left: 3px solid whitesmoke;
+  margin-left: 3vh;
+  height: 9vh;
+}
